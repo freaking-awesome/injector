@@ -6,7 +6,6 @@
  *
  * @license Public Domain
  */
-
 module.exports= Injector
 
 
@@ -183,6 +182,8 @@ function get(name, injector, $resolving) {
     }
     return value
 }
+
+
 
 function invoke(factory, injector, $resolving) {
     var values= Object.keys(factory.$inject).map(function (key) {
